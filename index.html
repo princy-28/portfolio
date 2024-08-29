@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#hero">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="text-center text-white d-flex align-items-center justify-content-center" style="height:250px; background-color: #343a40;">
+        <div>
+            <h1>Welcome to My Portfolio</h1>
+            <p class="lead">A showcase of my skills and projects</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="projects" class="container mt-5">
+        <h2 class="text-center">Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        Project 1
+                    </div>
+                    <div class="card-body">
+                        <p>Game created using JS.</p>
+                        <button class="btn btn-info" data-toggle="collapse" data-target="#project1-details">
+                            View Details
+                        </button>
+                        <div id="project1-details" class="collapse mt-3">
+                            <img src="1.png" style="width: 250px; height:200px;">
+                            <p> This project is a game built with HTML and JavaScript. Players navigate by using the arrow keys to avoid obstacles. If an obstacle is touched, the game ends. The player's score is displayed throughout the game.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-success text-white">
+                        Project 2
+                    </div>
+                    <div class="card-body">
+                        <p>My Blog</p>
+                        <button class="btn btn-info" data-toggle="collapse" data-target="#project2-details">
+                            View Details
+                        </button>
+                        <div id="project2-details" class="collapse mt-3">
+                            <img src="2.png" style="width: 250px; height:200px;">
+                            <p> Welcome to my blog, where I share my thoughts on various topics including recent movies, books I've read, environmental issues I'm passionate about, and the places I visit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-warning text-white">
+                        Project 3
+                    </div>
+                    <div class="card-body">
+                        <p> Fun and Entertainment</p>
+                        <button class="btn btn-info" data-toggle="collapse" data-target="#project3-details">
+                            View Details
+                        </button>
+                        <div id="project3-details" class="collapse mt-3">
+                            <img src="3.png" style="width: 250px; height:200px;">
+                            <p> This project is created with Bootstrap and features a webpage dedicated to animated movies and characters that I love to watch.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mt-5">
+        <h2 class="text-center">About Me</h2>
+        <div class="card mt-3">
+            <div class="card-body bg-danger">
+                <h4 class="card-title">Hello, I'm Shiva</h4>
+                <p class="card-text">I'm a student who knows to code in HTML, CSS, JavaScript, and Python. I enjoy creating responsive and interactive websites.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mt-5">
+        <h2 class="text-center">Contact Me</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
